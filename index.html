@@ -10,27 +10,80 @@
 
   <title>Frontend Mentor | Intro component with sign up form</title>
 
-
 </head>
 
 <body>
 
-  Learn to code by watching others
+  <main class="intro">
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
-  but understanding how developers think is invaluable.
+    <picture class="intro__background">
+      <source srcset="images/bg-intro-mobile.png" class="background__img" media="(max-width: 370px)">
+      <source srcset="images/bg-intro-desktop.png" class="background__img" media="(min-width: 1440px)">
+      <img src="images/bg-intro-desktop.png">
+    </picture>
 
-  Try it free 7 days then $20/mo. thereafter
+    <section class="intro__content">
 
-  First Name
-  Last Name
-  Email Address
-  Password
+      <header class="intro__header">
 
-  Claim your free trial
+        <h1 class="intro__title">
+          Learn to code by watching others
+        </h1>
 
-  By clicking the button, you are agreeing to our Terms and Services
+        <p class="intro__text">
+          See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+          but understanding how developers think is invaluable.
+        </p>
 
+      </header>
+
+      <section class="intro__hero">
+
+        <button class="hero__btn">
+          Try it free 7 days then $20/mo. thereafter
+        </button>
+
+        <div class="form__container">
+
+          <form class="form" id="form">
+
+            <div class="form__control">
+              <label for="firstname">First Name</label>
+              <input type="text" id="firstname" name="firstname" placeholder="First Name">
+              <small class="form__error-msg">Error message</small>
+            </div>
+            <div class="form__control">
+              <label for="lastname">Last Name</label>
+              <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+              <small class="form__error-msg">Error message</small>
+            </div>
+            <div class="form__control">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Email Address">
+              <small class="form__error-msg">Error message</small>
+            </div>
+            <div class="form__control">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" placeholder="Password">
+              <small class="form__error-msg">Error message</small>
+            </div>
+            <button type="submit">CLAIM YOUR FREE TRIAL</button>
+
+          </form>
+
+          <footer class="form__footer">
+            <p>
+              By clicking the button, you are agreeing to our Terms and Services
+            </p>
+          </footer>
+
+        </div>
+
+      </section>
+
+    </section>
+
+  </main>
 
 </body>
 
