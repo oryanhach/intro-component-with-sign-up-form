@@ -171,8 +171,13 @@ body {
 	display: none;
 }
 
-.form__control small {
-	visibility: hidden;
+.form__error-msg {
+	font-size: 0.75rem;
+	color: var(--clr-primary-red);
+	font-style: italic;
+	margin-left: 18rem;
+	margin-top: -10px;
+	margin-bottom: 1rem;
 	display: none;
 }
 
